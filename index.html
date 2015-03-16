@@ -1,18 +1,229 @@
-<html>
-	<head>
-		<script src="js/squares.min.js"></script>
-	</head>
+<!DOCTYPE html>
+<html lang="en">
 
-	<body>
-		<canvas id="canvas" width="240" height="240" style="border:1px solid #000000"></canvas>
-	</body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<script>
-		canvas.style.left = "1115px";
-        canvas.style.top = "415px";
-        canvas.style.position = "absolute";
-		var squares = new squaresjs(240,240,20);
-		squares.draw();
-	</script>
+    <title>Bread Basket - Wheat Free Bakery</title>
+
+    <!-- Retina.js -->
+    <!-- WARNING: Retina.js doesn't work if you view the page via file:// -->
+    <script src="assets/js/plugins/retina.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Economica%7COld+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href="assets/fonts/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="assets/css/foodster.css" rel="stylesheet">
+
+    <!-- For demo purposes only -->
+    <link href="assets/css/demo.css" rel="stylesheet">
+
+    <!-- Your custom CSS -->
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="assets/js/plugins/htmlshiv.min.js"></script>
+        <script src="assets/js/plugins/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top" class="index">
+
+    <div class="loading-screen">
+        <div class="content animated fadeInDown">
+            <i class="fa fa-circle-o-notch fa-spin"></i>
+            <h2 class="section-heading">Baking the page</h2>
+            <h3 class="section-subheading">Please wait...</h3>
+        </div>
+    </div>
+
+    <!-- Main Slider -->
+    <header id="header" class="intro">
+        <div id="hero-carousel" class="carousel slide" data-ride="carousel">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+
+            <!-- Start slide -->
+            <div class="item active">
+                <div class="fill item_two"></div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="slide-content animated fadeInDown">
+                            <span class="section-icon">f</span>
+                            <h1>Bread Basket</h1>
+							<br>
+                            <h2>Wheat Free Bakery</h2>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+            </div>
+            <!-- End slide -->     
+        
+            <!-- Start slide -->
+            <div class="item">
+                <div class="fill item_three"></div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="slide-content animated zoomIn">
+                            <span class="section-icon">x</span>
+                            <h1>taqabar</h1>
+							<br>
+                            <h2>Natural energy is what nature intended</h2>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+            </div>
+            <!-- End slide -->   
+
+          </div><!-- /.carousel-inner -->
+
+        <a href="#nav" class="btn page-scroll header-scroll">
+            <i class="fa fa-angle-down animated"></i>
+        </a>
+
+        <!-- Controls -->
+          <a class="left carousel-control" href="#hero-carousel" role="button" data-slide="prev">
+            <span class="fa fa-angle-left"></span>
+          </a>
+          <a class="right carousel-control" href="#hero-carousel" role="button" data-slide="next">
+            <span class="fa fa-angle-right"></span>
+          </a>
+
+        </div><!-- /#hero-carousel -->
+    </header><!-- /.intro -->
+    <!-- End Main Slider -->
+
+    <!-- Navigation -->
+    <nav id="nav" class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle are grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div><!-- /.navbar-header -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a class="page-scroll">Points of Sale</a></li>
+                    <li><a class="page-scroll">Products</a></li>
+                    <li><a class="page-scroll">Buy Online</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Home</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="page-scroll">Gallery</a></li>
+                    <li><a class="page-scroll">Contact Us</a></li>
+                </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- End Navigation -->
+
+    <!-- Introduction Section -->
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center wow zoomIn">
+                    <h2 class="section-heading">A unique experience for food lovers.</h2>
+                    <br><br><br><br><br><br><br>
+                    <h3 class="section-subheading text-muted">Homemade food, local ingredients <span>... carefully prepared.</span></h3>
+
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+    <!-- End Introduction Section -->
+
+	<div class="purchase">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12 wow fadeInDown">
+                    <h2 class="section-heading">Visit us</h2>
+                    <a href="https://www.facebook.com/BreadBasketSquare" class="btn btn-primary btn-lg" target="_parent">Facebook</a>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="scroll-up">
+        <a class="page-scroll" href="#header"><i class="fa fa-angle-double-up"></i></a>
+    </div>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="assets/js/plugins/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- jQuery Easing -->
+    <script src="assets/js/plugins/jquery.easing.1.3.min.js"></script>
+
+    <!-- WOW plugin (used for animated sections) -->
+    <script src="assets/js/plugins/wow.min.js"></script>
+
+    <!-- jQuery Bootstrap Validation for Booking Form -->
+    <script src="assets/js/plugins/jqBootstrapValidation.js"></script>
+
+    <!-- Google Maps -->
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+    <!-- Foodster JavaScript -->
+    <script src="assets/js/foodster.js"></script>
+
+    <!-- For demo purposes only -->
+    <script src="assets/demo/style.switcher.js"></script>
+
+    <!-- Your Custom JavaScript -->
+    <script src="assets/js/custom.js"></script>
+
+    <!-- Only run this JS on this page -->
+    <script>
+    $(document).scroll( function() {
+        "use strict";
+        // Add and remove the navbar-shrink class for fixed navigation on page scroll
+        if ( $(this).scrollTop()>=$('header').position().top ) {
+            $('nav').addClass('navbar-shrink');
+        }
+
+        if ( $(window).scrollTop() < $('header').height() + 1 ) {
+            $('nav').removeClass('navbar-shrink');
+        }
+    });
+    </script>
+
+    <!-- Placeholders.js provides IE 6-9 support of HTML5 placeholder -->
+    <!--[if lte IE 9]>
+        <script src="assets/js/plugins/placeholders.min.js"></script>
+    <![endif]-->
+
+</body>
 
 </html>
